@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttam Rimal - Professional Video Editor Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Using more versatile font pairing -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:wght@700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#home" class="logo">UR</a>
+                <button class="menu-button" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured-work">Work</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#reels">Reels</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+             <!-- Optional: Add subtle background pattern or effect via CSS -->
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Uttam Rimal</h1>
+                        <h2>Creative Video Editor & Storyteller</h2>
+                        <p>Transforming footage into compelling narratives. I'm a <span id="typed-text"></span> with over a year of experience crafting visually stunning videos that engage and inspire.</p>
+                        <div class="cta-buttons">
+                            <a href="#featured-work" class="cta-button primary">View My Work</a>
+                            <a href="#contact" class="cta-button secondary">Get a Quote</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/uttamrimal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/uttamrimal" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/c/UttamRimal" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/uttamrimal" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.behance.net/uttamrimal" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <!-- Use a relative path -->
+                        <img src="images/profile-uttam.jpg" alt="Uttam Rimal - Professional Video Editor" loading="lazy">
+                    </div>
+                </div>
+            </div>
+             <a href="#featured-work" class="scroll-down-arrow" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="featured-work" class="section">
+            <div class="container">
+                <h2>Featured Work</h2>
+                <p class="section-subtitle">A selection of projects showcasing diverse editing styles.</p>
+                <div id="video-grid" class="video-grid">
+                    <!-- Video items will be dynamically added here by script.js -->
+                    <div class="loading-placeholder">Loading videos...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="section client-section">
+            <div class="container">
+              <h2>Trusted By</h2>
+               <p class="section-subtitle">Proud to have collaborated with diverse clients.</p>
+              <div class="client-logos">
+                <!-- Use placeholder images from 'images' folder -->
+                <img src="images/client-logo-1.png" class="client-logo" data-client-id="1" alt="Client Brand 1" loading="lazy">
+                <img src="images/client-logo-2.png" class="client-logo" data-client-id="2" alt="Client Brand 2" loading="lazy">
+                <img src="images/client-logo-3.png" class="client-logo" data-client-id="3" alt="Client Brand 3" loading="lazy">
+                <img src="images/client-logo-4.png" class="client-logo" data-client-id="4" alt="Client Brand 4" loading="lazy">
+                <!-- Add more client logos as needed -->
+              </div>
+            </div>
+        </section>
+
+        <section id="reels" class="section">
+            <div class="container">
+                <h2>Short Form & Reels</h2>
+                <p class="section-subtitle">Quick glimpses into dynamic editing for social media.</p>
+                <div class="reels-grid" id="reels-container">
+                    <!-- Reel items will be dynamically added here by script.js -->
+                     <div class="loading-placeholder">Loading reels...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section blog-section">
+            <div class="container">
+                <h2>Insights & Tips</h2>
+                <p class="section-subtitle">Sharing knowledge on video editing and storytelling.</p>
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <div class="blog-post-image">
+                            <!-- Add placeholder image if desired -->
+                            <!-- <img src="images/blog-thumb-1.jpg" alt="Video Editing Art" loading="lazy"> -->
+                        </div>
+                        <div class="blog-post-content">
+                            <h3>The Art of Pacing in Video Editing</h3>
+                            <p>Discover how timing and rhythm can drastically change the impact of your video. Explore techniques for creating tension, excitement, or reflection...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                         <div class="blog-post-image">
+                            <!-- <img src="images/blog-thumb-2.jpg" alt="Video Editing Software" loading="lazy"> -->
+                        </div>
+                         <div class="blog-post-content">
+                            <h3>Top 5 Free Video Editing Tools for Beginners</h3>
+                            <p>Starting your video editing journey? You don't need expensive software. Check out these powerful free tools to get started...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <div class="blog-post-image">
+                           <!-- <img src="images/blog-thumb-3.jpg" alt="Color Grading Visuals" loading="lazy"> -->
+                        </div>
+                         <div class="blog-post-content">
+                            <h3>Color Grading Basics: Mood & Tone</h3>
+                            <p>Learn fundamental color grading techniques to enhance the visual narrative and evoke specific emotions in your audience...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section testimonial-section">
+            <div class="container">
+                <h2>What Clients Say</h2>
+                 <p class="section-subtitle">Feedback from collaborators.</p>
+                <div class="testimonial-slider">
+                    <!-- Testimonial items remain the same, JS handles cycling -->
+                    <div class="testimonial-item">
+                         <!-- Optional: Add client avatar/logo -->
+                        <!-- <img src="images/avatar-shahid.png" alt="Shahid Kathariya" class="testimonial-avatar"> -->
+                        <blockquote>
+                            "Uttam's editing skills brought our project to life. His attention to detail and creative flair exceeded our expectations. Truly captured the essence we were aiming for."
+                        </blockquote>
+                        <cite>- Shahid Kathariya, Vlogger/Youtuber</cite>
+                    </div>
+                    <div class="testimonial-item">
+                         <!-- <img src="images/avatar-utsab.png" alt="Utsab Pandey" class="testimonial-avatar"> -->
+                        <blockquote>
+                            "Working with Uttam was a pleasure. He understood our vision from the start and delivered a final product that was both professional and highly engaging. Great communication!"
+                        </blockquote>
+                         <cite>- Utsab Pandey, Professional Designer</cite>
+                    </div>
+                    <div class="testimonial-item">
+                        <!-- <img src="images/avatar-sarah.png" alt="Sarah Johnson" class="testimonial-avatar"> -->
+                        <blockquote>
+                            "Uttam's creativity and technical skills are truly impressive. He transformed raw footage into a compelling narrative that resonated perfectly with our target audience."
+                        </blockquote>
+                        <cite>- Sarah Johnson, Marketing Director (Sample Client)</cite>
+                    </div>
+                </div>
+                <!-- Optional navigation dots/arrows for slider -->
+                 <!-- <div class="testimonial-nav">
+                    <button class="prev-testimonial" aria-label="Previous testimonial"><</button>
+                    <button class="next-testimonial" aria-label="Next testimonial">></button>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Let's Create Together</h2>
+                <p class="section-subtitle">Have a project in mind? Reach out!</p>
+                <form id="contact-form" noValidate>
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="e.g., Jane Doe">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="e.g., jane.doe@example.com">
+                         <div class="error-message"></div>
+                    </div>
+                     <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="e.g., Video Editing Inquiry">
+                         <div class="error-message"></div> <!-- Optional validation -->
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                         <div class="error-message"></div>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                 <div id="form-status"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                 <a href="#home" class="footer-logo">UR</a>
+                <div class="footer-social-links social-links">
+                    <a href="https://www.linkedin.com/in/uttamrimal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/uttamrimal" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/c/UttamRimal" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/uttamrimal" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.behance.net/uttamrimal" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                </div>
+                 <p>© <span id="current-year"></span> Uttam Rimal. All rights reserved.</p>
+                 <p class="footer-credits">Designed with <i class="fas fa-heart" style="color: var(--secondary-color);"></i> | Built by AI & Uttam Rimal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content video-modal-content">
+            <span class="close-modal" aria-label="Close video player">×</span>
+            <div id="youtube-player-container">
+                 <div id="youtube-player"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="client-modal" class="modal">
+        <div class="modal-content client-modal-content">
+          <span class="close-modal" aria-label="Close client details">×</span>
+          <div id="client-info">
+              <!-- Client details loaded by JS -->
+          </div>
+          <div class="modal-navigation">
+            <button class="prev-arrow" aria-label="Previous client"><</button>
+            <button class="next-arrow" aria-label="Next client">></button>
+          </div>
+        </div>
+    </div>
+
+    <div id="reel-modal" class="modal">
+        <div class="modal-content reel-modal-content">
+          <span class="close-modal" aria-label="Close reel viewer">×</span>
+          <div id="reel-player">
+              <!-- Reel content loaded by JS -->
+          </div>
+           <div class="modal-navigation">
+            <button class="prev-arrow" aria-label="Previous reel"><</button>
+            <button class="next-arrow" aria-label="Next reel">></button>
+          </div>
+        </div>
+    </div>
+    <!-- End Modals -->
+
+    <a href="https://wa.me/9779840692118" class="whatsapp-chat-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button class="scroll-to-top" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- Removed Three.js and Vanta.js for simplicity, focus on core portfolio -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
